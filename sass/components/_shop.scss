@@ -1,0 +1,95 @@
+
+.shop{
+    list-style-type: none;
+    
+
+    &__item{
+        position: relative;
+        margin-bottom: 5rem;
+        border-radius: .5rem;
+        padding: 3rem;
+        padding-right: 20rem;
+        display: none;
+
+        &--attire{
+            border: 2px solid $color-darkGreen;
+        }
+
+        &--weapon{
+            border: 2px solid $color-darkRed;
+        }
+
+        &--artifact{
+            border: 2px solid $color-darkBlue-2;
+        }
+
+        &--active{
+            display: block;
+        }
+        
+        &-title{
+            font-size: 2.5rem;
+            text-transform: uppercase;
+
+            &--attire{
+                color: $color-darkGreen;
+            }
+
+            &--weapon{
+                color: $color-darkRed;
+            }
+
+            &--artifact{
+                color: $color-darkBlue-2;
+            }
+        }
+
+        &-img{
+            display: block;
+            width: 40rem;
+            height: 25rem;
+            border-radius: 2px;
+            background-size: cover;
+            background-blend-mode: overlay;
+
+            &--1{
+                background-image: linear-gradient(
+                to right bottom,
+                $color-lightGreen,
+                $color-darkGreen), 
+                url(../img/bootsoftravel.jpg);
+            }
+
+            &--2{
+                background-image: linear-gradient(
+                to right bottom,
+                $color-lightGreen,
+                $color-darkGreen), 
+                url(../img/interdimensionalbackpack.jpg);
+            }
+
+            &--3{
+                background-image: linear-gradient(
+                to right bottom,
+                $color-lightBlue,
+                $color-darkBlue), 
+                url(../img/blankmask.jpg);
+            }
+
+            &--4{
+                background-image: linear-gradient(
+                to right bottom,
+                $color-lightRed,
+                $color-darkRed), 
+                url(../img/sword.jpg);
+            }
+        }
+
+        &-info{
+            position: absolute;
+            top: 18%;
+        }
+
+    }
+
+}

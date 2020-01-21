@@ -1,0 +1,56 @@
+.shopping-cart{
+
+
+    &__subheads{
+        margin: 1rem;
+    }
+
+    &__list{
+        list-style-type: none;
+    }
+
+    &__item{
+        margin-bottom: 5rem;
+    }
+
+    &__item-thumbnail{
+        display: inline-block;
+        margin-left: 3rem;
+        width: 15rem;
+        height: 10rem;
+        border-radius: .5rem;
+        background-size: cover;
+        background-blend-mode: overlay;
+
+        &--1{
+                background-image: linear-gradient(
+                to right bottom,
+                $color-lightGreen,
+                $color-darkGreen), 
+                url(../img/bootsoftravel.jpg);
+            }
+    }
+
+    &__item-title{
+        margin-top: 4rem;
+        display: inline-block;
+    }
+
+    &__price-tag{
+        width: 50%;
+        margin-top: 4rem;
+        margin-left: 4rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+        letter-spacing: .3rem;
+    }
+
+    &__quantity{
+        margin-left: -3rem;
+        margin-top: 4rem;
+    }
+
+    &__total{
+        text-align: end;
+    }
+}

@@ -1,0 +1,22 @@
+
+.header{
+    padding-top: 7rem;
+    color: $color-white;
+    text-align: center;
+    font-size: 1.5rem;
+    height: 40vh;
+    background-image: linear-gradient(
+        to right bottom, 
+        rgba($color-lightBlue, .4), 
+        rgba($color-darkBlue, .4)),
+        url(../img/blueshop.jpg);
+
+        background-size: cover;
+        background-position: top;
+
+        &__primary--title{
+            display: block;
+            text-transform: uppercase;
+        }
+
+}

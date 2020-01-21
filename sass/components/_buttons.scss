@@ -1,0 +1,117 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 1rem;
+        padding: 1rem;
+        font-size: 1.5rem;
+
+        transition: all .2s;
+
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    &:hover{
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        transform: translateY(-1rem);
+    }
+
+    &:active{
+        outline: none;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+        transform: translateY(0);
+    }
+}
+
+
+.btn__add--blue{
+    background-color: $color-lightBlue;
+    color: $color-white;
+}
+
+.btn__add--red{
+    background-color: $color-lightRed;
+    color: $color-white;
+}
+
+.btn__add--green{
+    background-color: $color-lightGreen;
+    color: $color-white;
+}
+
+
+
+
+.btn--purchase{
+    &,
+    &:link,
+    &:visited{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 2rem;
+        font-weight: 700;
+        padding: 1.5rem;
+        font-size: 2.5rem;
+
+        margin-top: 5rem;
+        margin-left: 45rem;
+
+        background-color: $color-lightBlue;
+        color: $color-white;
+
+        transition: all .2s;
+
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    &:hover{
+        box-shadow: 0 1rem 2rem rgba($color-black, .2);
+        transform: translateY(-1rem);
+    }
+
+    &:active{
+        outline: none;
+        box-shadow: 0 .5rem 1rem rgba($color-black, .3);
+        transform: translateY(0);
+    }
+
+    
+}
+
+.btn--remove{
+    &,
+    &:link,
+    &:visited{
+        display: inline-block;
+        text-decoration: none;
+        text-transform: uppercase;
+        border-radius: 50%;
+        font-weight: 700;
+        
+        margin-left: 2rem;
+        font-size: 2.5rem;
+
+        transition: all .2s;
+
+        border: none;
+        cursor: pointer;
+        
+    }
+
+    &:hover{
+        color: $color-darkRed;
+        // border: 2px solid $color-darkRed;
+    }
+
+    &:active{
+        outline: none;
+    }
+}

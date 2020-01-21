@@ -1,0 +1,93 @@
+.heading__primary--title{
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-size: 4rem;
+    letter-spacing: 3.5rem;
+}
+
+.heading__subtext{
+    font-weight: 400;
+    letter-spacing: .5rem;
+}
+
+.heading__secondary{
+    display: inline-block;
+    font-size: 5rem;
+    letter-spacing: .5rem;
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        to right, 
+        $color-lightBlue, 
+        $color-darkBlue);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.heading__teritary{
+    font-size: 1.7rem;
+    display: inline-block;
+    // margin: 2rem;
+    text-transform: uppercase;
+}
+
+// =====================================
+
+.heading__item{
+    margin: 2rem;
+    width: 30%;
+    border-bottom: 1.5px solid $color-black
+}
+
+.heading__price{
+    margin: 2rem;
+    margin-left: 5rem;
+    width: 18%;
+    border-bottom: 1.5px solid $color-black
+}
+
+.heading__quantity{
+    margin: 2rem;
+    margin-left: 10rem;
+    width: 30%;
+    border-bottom: 1.5px solid $color-black
+}
+
+.heading__total{
+    border-top: 1.5px solid $color-black;
+    margin-right: 2rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+// =====================================
+
+.paragraph{
+    // column-count: 1;
+    // -webkit-column-count: 1;
+    // column-gap: 5rem;
+
+    padding-right: 5rem;
+    padding-bottom: 2rem;
+    display: block;
+    font-size: 2rem;
+    color: $color-darkGrey-2;
+}
+
+.price-tag{
+    width: 50%;
+    border-top: 1px solid $color-darkGrey-2;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+}

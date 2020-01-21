@@ -1,0 +1,75 @@
+.tabbar{
+    position: absolute;
+    list-style-type: none;
+    text-align: center;
+    width: 40%;
+    border-bottom: 1.5px solid $color-black;
+    top: 63%;
+    left: 30%;
+
+
+    &__list{
+        text-align: center;
+      
+    }
+
+    &__tab{
+        width: 20%;
+        padding-bottom: 1rem;
+        display: inline-block;
+        transition: all .2s;
+
+        &:hover{
+            transform: scale(1.2) skew(0, 5deg);
+        }
+
+    }
+
+
+    &__link{
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+
+        &--1:link,
+        &--1:visited,
+        &--1:active{
+            color: $color-darkRed-2;
+
+            
+        }
+
+        &--2:link,
+        &--2:visited,
+        &--2:active{
+            color: $color-darkGreen-2;
+        }
+
+        &--3:link,
+        &--3:visited,
+        &--3:active{
+            color: $color-darkBlue-2;
+        }
+
+        // TAB-LINK ACTIVE STATES ===========
+        
+        &--1--active{
+            border: 2px solid $color-darkRed-2;
+            padding: .5rem;
+        }
+
+        &--2--active{
+            border: 2px solid $color-darkGreen-2;
+            padding: .5rem;
+        }
+
+        &--3--active{
+            border: 2px solid $color-darkBlue-2;
+            padding: .5rem;
+        }
+
+    }
+}
+

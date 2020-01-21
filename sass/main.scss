@@ -1,0 +1,41 @@
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+@import "./abstracts/animations";
+
+@import "./base/typography";
+@import "./base/utilities";
+
+@import "./components/buttons";
+@import "./components/shop";
+@import "./components/shoppingcart";
+@import "./layout/header";
+@import "./layout/tabbar";
+@import "./layout/navigation";
+@import "./layout/grid";
+@import "./pages/home";
+
+// ====================================
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    // Defines what 1rem equals
+    font-size: 62.5%;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    padding: 3rem 20rem;
+}
+
+
+
