@@ -370,6 +370,14 @@
           transform: scale(1.2);
 }
 
+.tabbar__tab--content {
+  display: none;
+}
+
+.tabbar__tab--content--active {
+  display: block;
+}
+
 .tabbar__link {
   text-decoration: none;
   text-transform: uppercase;
