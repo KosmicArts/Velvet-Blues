@@ -3,7 +3,7 @@
     list-style-type: none;
     text-align: center;
     width: 40%;
-    border-bottom: 1.5px solid $color-black;
+    border-bottom: 1px solid $color-black;
     top: 63%;
     left: 30%;
 
@@ -20,7 +20,7 @@
         transition: all .2s;
 
         &:hover{
-            transform: scale(1.2) skew(0, 5deg);
+            transform: scale(1.2);
         }
 
     }

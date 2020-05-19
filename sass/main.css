@@ -348,7 +348,7 @@
   list-style-type: none;
   text-align: center;
   width: 40%;
-  border-bottom: 1.5px solid #000;
+  border-bottom: 1px solid #000;
   top: 63%;
   left: 30%;
 }
@@ -366,8 +366,8 @@
 }
 
 .tabbar__tab:hover {
-  -webkit-transform: scale(1.2) skew(0, 5deg);
-          transform: scale(1.2) skew(0, 5deg);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .tabbar__link {
@@ -431,7 +431,7 @@
 }
 
 .navbar__link:link:hover, .navbar__link:link:active, .navbar__link:visited:hover, .navbar__link:visited:active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 1.5px solid #fff;
 }
 
 .row {
