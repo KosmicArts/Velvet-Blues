@@ -11,9 +11,9 @@ const setUpTabs = () => {
             // CAN ONLY TOGGLE, DOESN'T WORK EXACTLY AS INTENDED
 
             tabbar.querySelectorAll(`.tabbar__link--${tabNumber}`).forEach(link => {
-                link.classList.toggle(`tabbar__link--${tabNumber}--active`);
-                link.classList.toggle(`tabbar__link--${tabNumber}--active`);
-                link.classList.toggle(`tabbar__link--${tabNumber}--active`);
+                link.classList.remove(`tabbar__link--${tabNumber}--active`);
+                link.classList.remove(`tabbar__link--${tabNumber}--active`);
+                link.classList.remove(`tabbar__link--${tabNumber}--active`);
                 
             });
 
@@ -26,7 +26,7 @@ const setUpTabs = () => {
                 
 
             });
-            
+
 
         });
     })
