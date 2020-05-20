@@ -370,14 +370,6 @@
           transform: scale(1.2);
 }
 
-.tabbar__tab--content {
-  display: none;
-}
-
-.tabbar__tab--content--active {
-  display: block;
-}
-
 .tabbar__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -398,18 +390,8 @@
   color: blue;
 }
 
-.tabbar__link--1--active {
-  border: 2px solid #dd0000;
-  padding: .5rem;
-}
-
-.tabbar__link--2--active {
-  border: 2px solid #088a5f;
-  padding: .5rem;
-}
-
-.tabbar__link--3--active {
-  border: 2px solid blue;
+.tabbar__link--active {
+  border-bottom: 1.7px solid black;
   padding: .5rem;
 }
 
