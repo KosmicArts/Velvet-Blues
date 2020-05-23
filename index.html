@@ -44,15 +44,15 @@
                 <div class="tabbar">
                     <ul class="tabbar__list">
                         <li class="tabbar__tab">
-                            <a class="tabbar__link tabbar__link--1 tabbar__link--active" data-for-tab="1" href="#">Weapon</a>
+                            <a class="tabbar__link tabbar__link--1 tabbar__link--active" data-tab-target="#weapon" href="#">Weapon</a>
                         </li>
 
                         <li class="tabbar__tab">
-                            <a class="tabbar__link tabbar__link--2" data-for-tab="2" href="#">Attire</a>
+                            <a class="tabbar__link tabbar__link--2" data-tab-target="#attire" href="#">Attire</a>
                         </li>
 
                         <li class="tabbar__tab">
-                            <a class="tabbar__link tabbar__link--3" data-for-tab="3" href="#">Artifact</a>
+                            <a class="tabbar__link tabbar__link--3" data-tab-target="#artifact" href="#">Artifact</a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +62,7 @@
         <section class="section__shop">
             
             <ul class="shop">
-                <li class="shop__item shop__item--2 shop__item--attire" data-tab="2">
+                <li class="shop__item shop__item--2 shop__item--attire" id="attire" data-tab-content>
 
                     <div class="row">
 
@@ -93,7 +93,7 @@
 
                 </li>
 
-                <li class="shop__item shop__item--2 shop__item--attire" data-tab="2">
+                <li class="shop__item shop__item--2 shop__item--attire" id="attire" data-tab-content>
 
                         <div class="row">
     
@@ -126,7 +126,7 @@
     
                     </li>
 
-                    <li class="shop__item shop__item--3 shop__item--artifact" data-tab="3">
+                    <li class="shop__item shop__item--3 shop__item--artifact" id="artifact" data-tab-content>
 
                             <div class="row">
         
@@ -158,7 +158,7 @@
         
                         </li>
 
-                        <li class="shop__item--active shop__item shop__item--1 shop__item--weapon" data-tab="1">
+                        <li class="active shop__item shop__item--1 shop__item--weapon" id="weapon" data-tab-content>
 
                                 <div class="row">
             
