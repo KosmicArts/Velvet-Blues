@@ -33,12 +33,56 @@
 // });
 
 
-const tabs = document.querySelectorAll(`[data-tab-target]`);
+// const tabs = document.querySelectorAll(`[data-tab-target]`);
 
-tabs.forEach(tab => {
-tab.addEventListener("click", () => {
-    const target = document.querySelector(tab.dataset.tabTarget);
-    target.classList.add("active");
-})
+// tabs.forEach(tab => {
+// tab.addEventListener("click", () => {
+//     const target = document.querySelector(tab.dataset.tabTarget);
+//     target.classList.add("active");
+// })
 
-})
+// })
+
+const tabs = document.querySelectorAll(".tabbar__list li a");
+
+const weapon = document.querySelectorAll(".shop__item--weapon");
+const attire = document.querySelectorAll(".shop__item--attire");
+const artifact = document.querySelectorAll(".shop__item--artifact");
+const all = document.querySelectorAll(".shop__item");
+
+tabs.forEach((tab) => {
+    tab.addEventListener("click", () => {
+        // ADDS AND REMOVES ACTIVE CLASS ON THE TABS WHEN CLICKED
+
+        tabs.forEach((tab) => {
+            tab.classList.remove("tabbar__link--active");
+        })
+        tab.classList.add("tabbar__link--active");
+
+        // REVEALS SHOP ITEMS BASED ON THE TAB CLICKED
+
+        let tabval = tab.getAttribute("data-tab");
+
+        all.forEach((i) => {
+            i.style.display = "none";
+        });
+
+        if(tabval == "weapon"){
+            weapon.forEach((i) => {
+                i.style.display = "block";
+            });
+            
+        }else if(tabval == "attire"){
+            attire.forEach((i) => {
+                i.style.display = "block";
+            });
+
+        }else if(tabval == "artifact"){
+            artifact.forEach((i) => {
+                i.style.display = "block";
+            });
+
+        }
+
+    })
+});

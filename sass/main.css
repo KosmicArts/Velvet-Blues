@@ -276,14 +276,6 @@
   top: 18%;
 }
 
-[data-tab-content] {
-  display: none;
-}
-
-.active[data-tab-content] {
-  display: block;
-}
-
 .shopping-cart__subheads {
   margin: 1rem;
 }
