@@ -64,22 +64,22 @@ tabs.forEach((tab) => {
         let tabval = tab.getAttribute("data-tab");
 
         all.forEach((i) => {
-            i.style.display = "none";
+            i.classList.remove("shop__item--active");
         });
 
         if(tabval == "weapon"){
             weapon.forEach((i) => {
-                i.style.display = "block";
+                i.classList.add("shop__item--active");
             });
             
         }else if(tabval == "attire"){
             attire.forEach((i) => {
-                i.style.display = "block";
+                i.classList.add("shop__item--active");
             });
 
         }else if(tabval == "artifact"){
             artifact.forEach((i) => {
-                i.style.display = "block";
+                i.classList.add("shop__item--active");
             });
 
         }
